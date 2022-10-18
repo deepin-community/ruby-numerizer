@@ -1,0 +1,25 @@
+ruby-numerizer (0.2.0-2) unstable; urgency=medium
+
+  * Reupload to unstable 
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 07 Jan 2020 22:56:35 +0530
+
+ruby-numerizer (0.2.0-1) experimental; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Pirate Praveen ]
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Move debian/watch to gemwatch.debian.net
+  * Use salsa.debian.org in Vcs-* fields
+  * New upstream version 0.2.0
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 04 Dec 2019 18:04:17 +0530
+
+ruby-numerizer (0.1.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #827519)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 17 Jun 2016 16:12:16 +0530

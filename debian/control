@@ -1,0 +1,26 @@
+Source: ruby-numerizer
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               gem2deb,
+               rake
+Standards-Version: 4.4.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-numerizer.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-numerizer
+Homepage: http://github.com/jduff/numerizer
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-numerizer
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: ruby-chronic-duration (<< 0.10.6.2~)
+Description: parse numbers in natural language from strings (ex forty two)
+ Numerizer is a library to help with parsing numbers in natural language from
+ strings (ex forty two). It was extracted from the awesome Chronic gem
+ http://github.com/evaryont/chronic.
